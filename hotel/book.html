@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/book.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="shortcut icon" href="tab.png">
+  <title>The Elite</title>
+</head>
+
+     <!-- navbar -->
+     <nav id="navbar">
+        <div id="logo">
+            <a href="home.html" alt=""><img src="icon.jpg"></a>
+        </div>
+        <ul>
+            <li class="item"><a href="home.html">Home</a></li>
+            <li class="item"><a href="service.html">Services</a></li>
+            <li class="item"><a href="form.html"><span style="color: black;">Booking</span></a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+  
+  <form>
+    <div class="personal">
+
+      <h2>Personal Details</h2><br>
+      <label for="personName" style="margin-left: 40px">Full name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required><br><br>
+      <label for="phone" style="margin-left: 5px">Phone number:</label>
+      <input type="number" placeholder="Enter your number"><br><br>
+      <label for="personAdhaar">Adhaar number:</label>
+      <input type="number" id="name" placeholder="Adhaar Number" required>
+    </div>
+  </form>
+<main>
+    <div class="room-selection">
+      <h2>Choose a Room</h2><br>
+      <label for="roomType" style="margin-left: 5px">Select Room Type:</label>
+      <select id="roomType" required>
+        <option value="" disabled selected>Select Room Type</option>
+        <option value="single">Single Bed</option>
+        <option value="double">Master Bed</option>
+        <option value="luxury">Luxury room</option>
+        <option value="elite">Elite room</option>
+      </select>
+      <br>
+      
+    </div>
+    
+    <div class="booking-details" id="bookingDetails">
+      <h2>Booking Details</h2><br>
+      <label for="checkInDate" style="margin-left: 30px">Check-in Date:</label>
+      <input type="date" id="checkInDate" required>
+      <br><br>
+      <label for="checkOutDate" style="margin-left: 20px">Check-out Date:</label>
+      <input type="date" id="checkOutDate" required>
+      <br><br>
+      <label for="numPeople" style="margin-left: 30px">Person:</label>
+      <input type="number" id="numPeople" min="1" required><br><br>
+      
+      <label for="advance" style="margin-left: 20px">Advance:</label>
+      <input type="number" id="advanceamount" min="100" step="100" required>
+    
+    </div>
+    
+    <div class="billing" id="billing">
+      <!-- Billing information will be displayed here -->
+    </div>
+    <button id="checkAvailability">Check Bill</button>
+    
+    <button id="confirmBooking">Confirm Booking</button>
+  </main>
+  
+  <script src="book.js"></script>
+</body>
+</html>

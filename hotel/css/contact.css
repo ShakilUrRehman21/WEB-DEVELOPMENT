@@ -1,0 +1,41 @@
+/* contact us */
+#contact{
+    position: relative;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 30%;
+    border: 5px solid salmon;
+    background-color: salmon;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+}
+
+.btn{
+    padding: 10px;
+}
